@@ -35,11 +35,11 @@
                                     </thead>
                                     <tbody>
                                     <?php if(($products->count())>0): ?>
-                                        <?php ($i=1); ?>
+
                                         <?php $__currentLoopData = $products; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $key =>$item): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
 
                                             <tr>
-                                                <th scope="row"><?php echo e($i++); ?></th>
+                                                <th scope="row"><?php echo e($loop->iteration); ?></th>
                                                 <td><?php echo e($item->product_name); ?></td>
                                                 <td>
 

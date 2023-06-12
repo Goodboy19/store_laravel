@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b1534370-de80-4964-933d-aa07122d384c" name="Changes" comment="one" />
+    <list default="true" id="b1534370-de80-4964-933d-aa07122d384c" name="Changes" comment="Two">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Admin/product-list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Admin/product-list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/1SBIRQWRbI1uysT99eQLLnLsYJFW9QYgKvYhI7Wj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/9JiMpZiWrtUC4C1BstLeRuf5uQ03q9oxZmquEKJt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/4b0639c3f6c45fc70fb38f7034dcdb55.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/4b0639c3f6c45fc70fb38f7034dcdb55.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -161,6 +167,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
@@ -275,6 +282,16 @@
       <workItem from="1685673847674" duration="2856000" />
       <workItem from="1685714449846" duration="2075000" />
       <workItem from="1685814874593" duration="4845000" />
+      <workItem from="1685820825415" duration="818000" />
+      <workItem from="1685934797267" duration="5000" />
+      <workItem from="1685957819996" duration="25000" />
+      <workItem from="1685979745665" duration="37000" />
+      <workItem from="1686057158065" duration="625000" />
+      <workItem from="1686495162576" duration="88000" />
+      <workItem from="1686585314062" duration="1000" />
+      <workItem from="1686585507338" duration="59000" />
+      <workItem from="1686585783384" duration="88000" />
+      <workItem from="1686585890804" duration="598000" />
     </task>
     <task id="LOCAL-00001" summary="one">
       <created>1685819561872</created>
@@ -283,7 +300,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685819561872</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Two">
+      <created>1685820883474</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1685820883474</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -385,7 +409,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="one" />
-    <option name="LAST_COMMIT_MESSAGE" value="one" />
+    <MESSAGE value="Two" />
+    <option name="LAST_COMMIT_MESSAGE" value="Two" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -35,11 +35,11 @@
                                     </thead>
                                     <tbody>
                                     @if(($products->count())>0)
-                                        @php($i=1)
+
                                         @foreach($products as $key =>$item)
 
                                             <tr>
-                                                <th scope="row">{{$i++}}</th>
+                                                <th scope="row">{{$loop->iteration }}</th>
                                                 <td>{{$item->product_name}}</td>
                                                 <td>
 {{--                                                    Thêm hàm strip_tag để loại bỏ các thẻ tag HTML--}}
