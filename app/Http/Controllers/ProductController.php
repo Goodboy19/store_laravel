@@ -71,13 +71,52 @@ class ProductController extends Controller
     }
 
     // Edit Product - Get
-    public function editProduct($id){
+    public function editProduct( Request $request, $id){
+        $title = 'Sửa thông tin sản phẩm';
+        if (!empty($id)) {
+            $request->session()->put('id', $id);
+            $productDetail = ProductModel::where('product_id', $id)->first();
+        }
+        else {
+            return redirect('admin/getProduct')->with('msg', 'Sản phẩm không tồn tại');
+        }
+        return view('/admin/product-edit',compact('productDetail','title'));
 
     }
 
     // Edit Product - POST
-    public function editProductPost($id){
+    public function editProductPost(Request $request){
+        $id= session('id');
+        if (!empty($id)){
+            if ($request->hasFile('product_image')) {
+                $file = $request->file('product_image');
+                // Lưu tên file và đường dẫn vào bản ghi
+                $file_name = time() . '.' . $file->getClientOriginalExtension();
+                $file_path = $file->move('uploads/images', $file_name);
+                $dataInsert =[
+                    'product_name'=> $request->product_name,
+                    'product_desc'=> $request->product_desc,
+                    'product_status'=> $request->product_status,
+                    'product_image'=>$file_path
+                ];
+            }
+            else{
+                $dataInsert =[
+                    'product_name'=> $request->product_name,
+                    'product_desc'=> $request->product_desc,
+                    'product_status'=> $request->product_status
+                    ];
+            }
+            ProductModel::where('product_id',$id)->update($dataInsert);
+            return redirect()->route('admin.get-product')->with('msg','Thêm dữ liệu thành công');
+        }
+
+        else{
+            return redirect('admin/get-product')->with('msg','Sản phẩm không tồn tại');
+        }
+
     }
+
 
     // Destroy Product - Get
     public function softDestroy($id){

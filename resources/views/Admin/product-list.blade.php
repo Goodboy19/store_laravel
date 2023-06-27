@@ -50,7 +50,7 @@
                                                     <img class="rounded-image" src="{{'/'.($item->product_image)}}" alt="Lỗi">
                                                 </td>
                                                 <td>
-                                                    @if ($item->brand_status==1)
+                                                    @if ($item->product_status==1)
                                                         <span class="badge bg-success">Hiển thị</span>
                                                     @else
                                                         <span class="badge bg-warning">Đã ẩn</span>

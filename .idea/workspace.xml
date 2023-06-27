@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b1534370-de80-4964-933d-aa07122d384c" name="Changes" comment="4th" />
+    <list default="true" id="b1534370-de80-4964-933d-aa07122d384c" name="Changes" comment="5th">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Admin/product-edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Admin/product-edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Admin/product-list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Admin/product-list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/4b0639c3f6c45fc70fb38f7034dcdb55.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/4b0639c3f6c45fc70fb38f7034dcdb55.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/logs/laravel.log" beforeDir="false" afterPath="$PROJECT_DIR$/storage/logs/laravel.log" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -171,7 +178,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "Shelf.Project.Settings",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.new.ui",
     "ts.external.directory.path": "/Applications/PhpStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
     "vue.rearranger.settings.migration": "true"
   },
@@ -287,6 +294,15 @@
       <workItem from="1686585783384" duration="88000" />
       <workItem from="1686585890804" duration="598000" />
       <workItem from="1686587411796" duration="884000" />
+      <workItem from="1686621990273" duration="646000" />
+      <workItem from="1686733024009" duration="603000" />
+      <workItem from="1686761150851" duration="28000" />
+      <workItem from="1687447442041" duration="1212000" />
+      <workItem from="1687793947826" duration="636000" />
+      <workItem from="1687832659219" duration="1295000" />
+      <workItem from="1687843129988" duration="23000" />
+      <workItem from="1687843160166" duration="147000" />
+      <workItem from="1687870425039" duration="6030000" />
     </task>
     <task id="LOCAL-00001" summary="one">
       <created>1685819561872</created>
@@ -316,7 +332,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686588283654</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="5th">
+      <created>1686622037496</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1686622037496</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -421,7 +444,8 @@
     <MESSAGE value="Two" />
     <MESSAGE value="3rd" />
     <MESSAGE value="4th" />
-    <option name="LAST_COMMIT_MESSAGE" value="4th" />
+    <MESSAGE value="5th" />
+    <option name="LAST_COMMIT_MESSAGE" value="5th" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

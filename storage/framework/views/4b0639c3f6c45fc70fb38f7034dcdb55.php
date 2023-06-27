@@ -50,7 +50,7 @@
                                                     <img class="rounded-image" src="<?php echo e('/'.($item->product_image)); ?>" alt="Lỗi">
                                                 </td>
                                                 <td>
-                                                    <?php if($item->brand_status==1): ?>
+                                                    <?php if($item->product_status==1): ?>
                                                         <span class="badge bg-success">Hiển thị</span>
                                                     <?php else: ?>
                                                         <span class="badge bg-warning">Đã ẩn</span>
