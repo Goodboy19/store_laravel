@@ -24,10 +24,18 @@
                             <span style="color: red">{{$message}}</span>
                             @enderror
                         </div>
+
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Tên sản phẩm</label>
                             <input name="product_name" class="form-control"  value="{{old('product_name')}}">
                             @error('product_name')
+                            <span style="color: red">{{$message}}</span>
+                            @enderror
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Giá sản phẩm</label>
+                            <input name="product_price" class="form-control"  value="{{old('product_price')}}">
+                            @error('product_price')
                             <span style="color: red">{{$message}}</span>
                             @enderror
                         </div>

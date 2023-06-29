@@ -31,10 +31,25 @@ if (isset($__messageOriginal)) { $message = $__messageOriginal; }
 endif;
 unset($__errorArgs, $__bag); ?>
                         </div>
+
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Tên sản phẩm</label>
                             <input name="product_name" class="form-control"  value="<?php echo e(old('product_name')); ?>">
                             <?php $__errorArgs = ['product_name'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?>
+                            <span style="color: red"><?php echo e($message); ?></span>
+                            <?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Giá sản phẩm</label>
+                            <input name="product_price" class="form-control"  value="<?php echo e(old('product_price')); ?>">
+                            <?php $__errorArgs = ['product_price'];
 $__bag = $errors->getBag($__errorArgs[1] ?? 'default');
 if ($__bag->has($__errorArgs[0])) :
 if (isset($message)) { $__messageOriginal = $message; }

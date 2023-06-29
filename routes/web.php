@@ -20,6 +20,7 @@ use Illuminate\Support\Facades\Route;
 */
 //FrontEnd
 Route::get('/', [HomeController::class,'index']);
+Route::get('/detail-product/{id}', [HomeController::class,'detailProduct'])->name('detailProduct');
 
 
 //-------------BACK END - QUẢN TRỊ ADMIN--------------

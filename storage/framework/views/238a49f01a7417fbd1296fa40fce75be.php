@@ -1,947 +1,429 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="format-detection" content="telephone=no" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no, minimal-ui"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>TRANG CHỦ BÁN HÀNG</title>
+    <link href="<?php echo e(asset('frontend/css/bootstrap.min.css')); ?>" rel="stylesheet">
+    <link href="<?php echo e(asset('frontend/css/font-awesome.min.css')); ?>" rel="stylesheet">
+    <link href="<?php echo e(asset('frontend/css/prettyPhoto.css')); ?>" rel="stylesheet">
+    <link href="<?php echo e(asset('frontend/css/price-range.css')); ?>" rel="stylesheet">
+    <link href="<?php echo e(asset('frontend/css/animate.css')); ?>" rel="stylesheet">
+    <link href="<?php echo e(asset('frontend/css/main.css')); ?>" rel="stylesheet">
+    <link href="<?php echo e(asset('frontend/css/responsive.css')); ?>" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="<?php echo e(asset('frontend/js/html5shiv.js')); ?>"></script>
+    <script src="<?php echo e(asset('frontend/js/respond.min.js')); ?>"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="<?php echo e(asset('frontend/images/ico/favicon.ico')); ?>">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php echo e(asset('frontend/images/ico/apple-touch-icon-144-precomposed.png')); ?>">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php echo e(asset('frontend/images/ico/apple-touch-icon-114-precomposed.png')); ?>">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo e(asset('frontend/images/ico/apple-touch-icon-72-precomposed.png')); ?>">
+    <link rel="apple-touch-icon-precomposed" href="<?php echo e(asset('frontend/images/ico/apple-touch-icon-57-precomposed.png')); ?>">
+</head><!--/head-->
 
-    <!-- fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Questrial|Raleway:700,900" rel="stylesheet">
-
-    <link href="<?php echo e(asset('frontend/css/bootstrap.min.css')); ?>" rel="stylesheet" type="text/css" />
-    <link href="<?php echo e(asset('frontend/css/bootstrap.extension.css')); ?>" rel="stylesheet" type="text/css" />
-    <link href="<?php echo e(asset('frontend/css/style.css')); ?>" rel="stylesheet" type="text/css" />
-    <link href="<?php echo e(asset('frontend/css/swiper.css')); ?>" rel="stylesheet" type="text/css" />
-    <link href="<?php echo e(asset('frontend/css/sumoselect.css')); ?>" rel="stylesheet" type="text/css" />
-    <link href="<?php echo e(asset('frontend/css/font-awesome.min.css')); ?>" rel="stylesheet" type="text/css" />
-
-    <link rel="shortcut icon" href="<?php echo e(asset('frontend/img/favicon.ico')); ?>" />
-    <title>Nam Store</title>
-</head>
 <body>
-
-<!-- LOADER -->
-<div id="loader-wrapper"></div>
-
-<div id="content-block">
-    <!-- HEADER -->
-    <header>
-        <div class="header-top">
-            <div class="content-margins">
-                <div class="row">
-                    <div class="col-md-5 hidden-xs hidden-sm">
-                        <div class="entry"><b>contact us:</b> <a href="tel:+35235551238745">+3  (523) 555 123 8745</a></div>
-                        <div class="entry"><b>email:</b> <a href="mailto:office@exzo.com">office@exzo.com</a></div>
-                    </div>
-                    <div class="col-md-7 col-md-text-right">
-                        <div class="entry"><a class="open-popup" data-rel="1"><b>login</b></a>&nbsp; or &nbsp;<a class="open-popup" data-rel="2"><b>register</b></a></div>
-                        <div class="entry language">
-                            <div class="title"><b>en</b></div>
-                            <div class="language-toggle header-toggle-animation">
-                                <a href="index1.html">fr</a>
-                                <a href="index1.html">ru</a>
-                                <a href="index1.html">it</a>
-                                <a href="index1.html">sp</a>
-                            </div>
-                        </div>
-                        <div class="entry hidden-xs hidden-sm"><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a></div>
-                        <div class="entry hidden-xs hidden-sm cart">
-                            <a href="cart.html">
-                                <b class="hidden-xs">Your bag</b>
-                                <span class="cart-icon">
-                                        <i class="fa fa-shopping-bag" aria-hidden="true"></i>
-                                        <span class="cart-label">5</span>
-                                    </span>
-                                <span class="cart-title hidden-xs">$1195.00</span>
-                            </a>
-                            <div class="cart-toggle hidden-xs hidden-sm">
-                                <div class="cart-overflow">
-                                    <div class="cart-entry clearfix">
-                                        <a class="cart-entry-thumbnail" href="#"><img src="<?php echo e(asset('frontend/img/product-1.png')); ?>" alt="" /></a>
-                                        <div class="cart-entry-description">
-                                            <table>
-                                                <tr>
-                                                    <td>
-                                                        <div class="h6"><a href="#">modern beat ht</a></div>
-                                                        <div class="simple-article size-1">QUANTITY: 2</div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="simple-article size-3 grey">$155.00</div>
-                                                        <div class="simple-article size-1">TOTAL: $310.00</div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="cart-color" style="background: #eee;"></div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="button-close"></div>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </div>
-                                    </div>
-                                    <div class="cart-entry clearfix">
-                                        <a class="cart-entry-thumbnail" href="#"><img src="<?php echo e(asset('frontend/img/product-2.png')); ?>" alt="" /></a>
-                                        <div class="cart-entry-description">
-                                            <table>
-                                                <tr>
-                                                    <td>
-                                                        <div class="h6"><a href="#">modern beat ht</a></div>
-                                                        <div class="simple-article size-1">QUANTITY: 2</div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="simple-article size-3 grey">$155.00</div>
-                                                        <div class="simple-article size-1">TOTAL: $310.00</div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="cart-color" style="background: #bf584b;"></div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="button-close"></div>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </div>
-                                    </div>
-                                    <div class="cart-entry clearfix">
-                                        <a class="cart-entry-thumbnail" href="#"><img src="<?php echo e(asset('frontend/img/product-3.png')); ?>" alt="" /></a>
-                                        <div class="cart-entry-description">
-                                            <table>
-                                                <tr>
-                                                    <td>
-                                                        <div class="h6"><a href="#">modern beat ht</a></div>
-                                                        <div class="simple-article size-1">QUANTITY: 2</div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="simple-article size-3 grey">$155.00</div>
-                                                        <div class="simple-article size-1">TOTAL: $310.00</div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="cart-color" style="background: #facc22;"></div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="button-close"></div>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="empty-space col-xs-b40"></div>
-                                <div class="row">
-                                    <div class="col-xs-6">
-                                        <div class="cell-view empty-space col-xs-b50">
-                                            <div class="simple-article size-5 grey">TOTAL <span class="color">$1195.00</span></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-6 text-right">
-                                        <a class="button size-2 style-3" href="checkout1.html">
-                                                <span class="button-wrapper">
-                                                    <span class="icon"><img src="<?php echo e(asset('frontend/img/icon-4.png')); ?>" alt=""></span>
-                                                    <span class="text">proceed to checkout</span>
-                                                </span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="hamburger-icon">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="header-bottom">
-            <div class="content-margins">
-                <div class="row">
-                    <div class="col-xs-3 col-sm-1">
-                        <a id="logo" href="index1.html"><img src="<?php echo e(asset('frontend/img/logo-2.png')); ?>" alt="" /></a>
-                    </div>
-                    <div class="col-xs-9 col-sm-11 text-right">
-                        <div class="nav-wrapper">
-                            <div class="nav-close-layer"></div>
-                            <nav>
-                                <ul>
-                                    <li class="active">
-                                        <a href="<?php echo e(url('trang-chu')); ?>">Home</a>
-                                        <div class="menu-toggle"></div>
-                                        <ul>
-                                            <li class="active"><a href="index1.html">Homepage 1</a></li>
-                                            <li><a href="index2.html">Homepage 2</a></li>
-                                            <li><a href="index3.html">Homepage 3</a></li>
-                                            <li><a href="index4.html">Homepage 4</a></li>
-                                            <li><a href="index5.html">Homepage 5</a></li>
-                                            <li><a href="index6.html">Homepage 6</a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="about1.html">about us</a>
-                                    </li>
-                                    <li class="megamenu-wrapper">
-                                        <a href="products1.html">products</a>
-                                        <div class="menu-toggle"></div>
-                                        <div class="megamenu">
-                                            <div class="links">
-                                                <a class="active" href="products1.html">Products Landing 1</a>
-                                                <a href="products2.html">Products Landing 2</a>
-                                                <a href="products3.html">Products Landing 3</a>
-                                                <a href="product.html">Product Detail</a>
-                                            </div>
-                                            <div class="content">
-                                                <div class="row nopadding">
-                                                    <div class="col-xs-6">
-                                                        <div class="product-shortcode style-5">
-                                                            <div class="product-label green">best price</div>
-                                                            <div class="icons">
-                                                                <a class="entry"><i class="fa fa-check" aria-hidden="true"></i></a>
-                                                                <a class="entry open-popup" data-rel="3"><i class="fa fa-eye" aria-hidden="true"></i></a>
-                                                                <a class="entry"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-                                                            </div>
-                                                            <div class="preview">
-                                                                <div class="swiper-container" data-loop="1">
-                                                                    <div class="swiper-button-prev style-1"></div>
-                                                                    <div class="swiper-button-next style-1"></div>
-                                                                    <div class="swiper-wrapper">
-                                                                        <div class="swiper-slide">
-                                                                            <img src="<?php echo e(asset('frontend/img/product-59.jpg')); ?>" alt="" />
-                                                                        </div>
-                                                                        <div class="swiper-slide">
-                                                                            <img src="<?php echo e(asset('frontend/img/product-61.jpg')); ?>" alt="" />
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="content-animate">
-                                                                <div class="title">
-                                                                    <div class="shortcode-rate-wrapper">
-                                                                        <div class="rate-wrapper align-inline">
-                                                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="h6 animate-to-green"><a href="product.html">modern beat nine</a></div>
-                                                                </div>
-                                                                <div class="description">
-                                                                    <div class="simple-article text size-2">Mollis nec consequat at In feugiat molestie tortor a malesuada</div>
-                                                                </div>
-                                                                <div class="price">
-                                                                    <div class="simple-article size-4 dark">$630.00</div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="preview-buttons">
-                                                                <div class="buttons-wrapper">
-                                                                    <a class="button size-2 style-2" href="product.html">
-                                                                            <span class="button-wrapper">
-                                                                                <span class="icon"><img src="<?php echo e(asset('frontend/img/icon-1.png')); ?>" alt=""></span>
-                                                                                <span class="text">Learn More</span>
-                                                                            </span>
-                                                                    </a>
-                                                                    <a class="button size-2 style-3" href="#">
-                                                                            <span class="button-wrapper">
-                                                                                <span class="icon"><img src="<?php echo e(asset('frontend/img/icon-3.png')); ?>" alt=""></span>
-                                                                                <span class="text">Add To Cart</span>
-                                                                            </span>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-xs-6">
-                                                        <div class="product-shortcode style-5">
-                                                            <div class="product-label green">best price</div>
-                                                            <div class="icons">
-                                                                <a class="entry"><i class="fa fa-check" aria-hidden="true"></i></a>
-                                                                <a class="entry open-popup" data-rel="3"><i class="fa fa-eye" aria-hidden="true"></i></a>
-                                                                <a class="entry"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-                                                            </div>
-                                                            <div class="preview">
-                                                                <div class="swiper-container" data-loop="1">
-                                                                    <div class="swiper-button-prev style-1"></div>
-                                                                    <div class="swiper-button-next style-1"></div>
-                                                                    <div class="swiper-wrapper">
-                                                                        <div class="swiper-slide">
-                                                                            <img src="<?php echo e(asset('frontend/img/product-60.jpg')); ?>" alt="" />
-                                                                        </div>
-                                                                        <div class="swiper-slide">
-                                                                            <img src="<?php echo e(asset('frontend/img/product-61.jpg')); ?>" alt="" />
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="content-animate">
-                                                                <div class="title">
-                                                                    <div class="shortcode-rate-wrapper">
-                                                                        <div class="rate-wrapper align-inline">
-                                                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="h6 animate-to-green"><a href="product.html">modern beat nine</a></div>
-                                                                </div>
-                                                                <div class="description">
-                                                                    <div class="simple-article text size-2">Mollis nec consequat at In feugiat molestie tortor a malesuada</div>
-                                                                </div>
-                                                                <div class="price">
-                                                                    <div class="simple-article size-4 dark">$630.00</div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="preview-buttons">
-                                                                <div class="buttons-wrapper">
-                                                                    <a class="button size-2 style-2" href="product.html">
-                                                                            <span class="button-wrapper">
-                                                                                <span class="icon"><img src="<?php echo e(asset('frontend/img/icon-1.png')); ?>" alt=""></span>
-                                                                                <span class="text">Learn More</span>
-                                                                            </span>
-                                                                    </a>
-                                                                    <a class="button size-2 style-3" href="#">
-                                                                            <span class="button-wrapper">
-                                                                                <span class="icon"><img src="<?php echo e(asset('frontend/img/icon-3.png')); ?>" alt=""></span>
-                                                                                <span class="text">Add To Cart</span>
-                                                                            </span>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <a href="services1.html">Services</a>
-                                    </li>
-                                    <li>
-                                        <a href="blog3.html">blog</a>
-                                        <div class="menu-toggle"></div>
-                                        <ul>
-                                            <li>
-                                                <a href="blog3.html">Blog Landing Pages</a>
-                                                <div class="menu-toggle"></div>
-                                                <ul>
-                                                    <li><a href="blog3.html">Blog Landing 1</a></li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="blogdetail1.html">Blog Detail Pages</a>
-                                                <div class="menu-toggle"></div>
-                                                <ul>
-                                                    <li><a href="blogdetail1.html">Blog Detail 1</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="gallery1.html">gallery</a>
-                                        <div class="menu-toggle"></div>
-                                        <ul>
-                                            <li><a href="gallery1.html">Gallery 1</a></li>
-                                            <li><a href="gallery2.html">Gallery 2</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="megamenu-wrapper">
-                                        <a href="#">Pages</a>
-                                        <div class="menu-toggle"></div>
-                                        <div class="megamenu">
-                                            <div class="links">
-                                                <a class="active" href="checkout1.html">Checkout 1</a>
-                                                <a href="checkout2.html">Checkout 2</a>
-                                                <a href="cart.html">Cart</a>
-                                                <a href="elements.html">Elements</a>
-                                            </div>
-                                            <div class="content">
-                                                <div class="row nopadding">
-                                                    <div class="col-xs-6">
-                                                        <div class="product-shortcode style-5">
-                                                            <div class="product-label green">best price</div>
-                                                            <div class="icons">
-                                                                <a class="entry"><i class="fa fa-check" aria-hidden="true"></i></a>
-                                                                <a class="entry open-popup" data-rel="3"><i class="fa fa-eye" aria-hidden="true"></i></a>
-                                                                <a class="entry"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-                                                            </div>
-                                                            <div class="preview">
-                                                                <div class="swiper-container" data-loop="1">
-                                                                    <div class="swiper-button-prev style-1"></div>
-                                                                    <div class="swiper-button-next style-1"></div>
-                                                                    <div class="swiper-wrapper">
-                                                                        <div class="swiper-slide">
-                                                                            <img src="<?php echo e(asset('frontend/img/product-61.jpg')); ?>" alt="" />
-                                                                        </div>
-                                                                        <div class="swiper-slide">
-                                                                            <img src="<?php echo e(asset('frontend/img/product-59.jpg')); ?>" alt="" />
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="content-animate">
-                                                                <div class="title">
-                                                                    <div class="shortcode-rate-wrapper">
-                                                                        <div class="rate-wrapper align-inline">
-                                                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="h6 animate-to-green"><a href="product.html">modern beat nine</a></div>
-                                                                </div>
-                                                                <div class="description">
-                                                                    <div class="simple-article text size-2">Mollis nec consequat at In feugiat molestie tortor a malesuada</div>
-                                                                </div>
-                                                                <div class="price">
-                                                                    <div class="simple-article size-4 dark">$630.00</div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="preview-buttons">
-                                                                <div class="buttons-wrapper">
-                                                                    <a class="button size-2 style-2" href="product.html">
-                                                                            <span class="button-wrapper">
-                                                                                <span class="icon"><img src="<?php echo e(asset('frontend/img/icon-1.png')); ?>" alt=""></span>
-                                                                                <span class="text">Learn More</span>
-                                                                            </span>
-                                                                    </a>
-                                                                    <a class="button size-2 style-3" href="#">
-                                                                            <span class="button-wrapper">
-                                                                                <span class="icon"><img src="<?php echo e(asset('frontend/img/icon-3.png')); ?>" alt=""></span>
-                                                                                <span class="text">Add To Cart</span>
-                                                                            </span>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-xs-6">
-                                                        <div class="banner-shortcode style-3 rounded-image text-center" style="background-image: url(<?php echo e(asset('frontend/img/background-11.jpg')); ?>);">
-                                                            <div class="valign-middle-cell">
-                                                                <div class="valign-middle-content">
-                                                                    <div class="simple-article size-5 light transparent uppercase col-xs-b5"><span class="color">30%</span>DISCOUNT</div>
-                                                                    <h3 class="h3 light col-xs-b15">all models from relax seriece</h3>
-                                                                    <div class="simple-article size-3 light transparent col-xs-b30">Vivamus in tempor eros. Phasellus rhoncus in nunc sit amet mattis. Integer in ipsum vestibulum, molestie arcu ac</div>
-                                                                    <a class="button size-2 style-1" href="#">
-                                                                            <span class="button-wrapper">
-                                                                                <span class="icon"><img src="<?php echo e(asset('frontend/img/icon-1.png')); ?>" alt=""></span>
-                                                                                <span class="text">learn more</span>
-                                                                            </span>
-                                                                    </a>
-
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li><a href="contact1.html">contact</a></li>
-                                </ul>
-                                <div class="navigation-title">
-                                    Navigation
-                                    <div class="hamburger-icon active">
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                    </div>
-                                </div>
-                            </nav>
-                        </div>
-                        <div class="header-bottom-icon toggle-search"><i class="fa fa-search" aria-hidden="true"></i></div>
-                        <div class="header-bottom-icon visible-rd"><i class="fa fa-heart-o" aria-hidden="true"></i></div>
-                        <div class="header-bottom-icon visible-rd">
-                            <i class="fa fa-shopping-bag" aria-hidden="true"></i>
-                            <span class="cart-label">5</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="header-search-wrapper">
-                    <div class="header-search-content">
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-sm-8 col-sm-offset-2 col-lg-6 col-lg-offset-3">
-                                    <form>
-                                        <div class="search-submit">
-                                            <i class="fa fa-search" aria-hidden="true"></i>
-                                            <input type="submit"/>
-                                        </div>
-                                        <input class="simple-input style-1" type="text" value="" placeholder="Enter keyword" />
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="button-close"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </header>
-
-    <div class="header-empty-space"></div>
-
-<?php echo $__env->yieldContent('content'); ?>
-
-    <!-- FOOTER -->
-    <footer>
+<header id="header"><!--header-->
+    <div class="header_top"><!--header_top-->
         <div class="container">
-            <div class="footer-top">
-                <div class="row">
-                    <div class="col-sm-6 col-md-3 col-xs-b30 col-md-b0">
-                        <img src="<?php echo e(asset('frontend/img/logo-1.png')); ?>" alt="" />
-                        <div class="empty-space col-xs-b20"></div>
-                        <div class="simple-article size-2 light fulltransparent">Integer posuere orci sit amet feugiat pellent que. Suspendisse vel tempor justo, sit amet posuere orci dapibus auctor</div>
-                        <div class="empty-space col-xs-b20"></div>
-                        <div class="footer-contact"><i class="fa fa-mobile" aria-hidden="true"></i> contact us: <a href="tel:+35235551238745">+3  (523) 555 123 8745</a></div>
-                        <div class="footer-contact"><i class="fa fa-envelope-o" aria-hidden="true"></i> email: <a href="mailto:office@exzo.com">office@exzo.com</a></div>
-                        <div class="footer-contact"><i class="fa fa-map-marker" aria-hidden="true"></i> address: <a href="#">1st, new york, usa</a></div>
-                    </div>
-                    <div class="col-sm-6 col-md-3 col-xs-b30 col-md-b0">
-                        <h6 class="h6 light">queck links</h6>
-                        <div class="empty-space col-xs-b20"></div>
-                        <div class="footer-column-links">
-                            <div class="row">
-                                <div class="col-xs-6">
-                                    <a href="#">home</a>
-                                    <a href="#">about us</a>
-                                    <a href="#">products</a>
-                                    <a href="#">services</a>
-                                    <a href="#">blog</a>
-                                    <a href="#">gallery</a>
-                                    <a href="#">contact</a>
-                                </div>
-                                <div class="col-xs-6">
-                                    <a href="#">privacy policy</a>
-                                    <a href="#">warranty</a>
-                                    <a href="#">login</a>
-                                    <a href="#">registration</a>
-                                    <a href="#">delivery</a>
-                                    <a href="#">pages</a>
-                                    <a href="#">our stores</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="clear visible-sm"></div>
-                    <div class="col-sm-6 col-md-3 col-xs-b30 col-sm-b0">
-                        <h6 class="h6 light">some posts</h6>
-                        <div class="empty-space col-xs-b20"></div>
-                        <div class="footer-post-preview clearfix">
-                            <a class="image" href="#"><img src="<?php echo e(asset('frontend/img/thumbnail-1.jpg')); ?>" alt="" /></a>
-                            <div class="description">
-                                <div class="date">apr 07 / 15</div>
-                                <a class="title">Fusce tincidunt accumsan pretium sit amet</a>
-                            </div>
-                        </div>
-                        <div class="footer-post-preview clearfix">
-                            <a class="image" href="#"><img src="<?php echo e(asset('frontend/img/thumbnail-2.jpg')); ?>" alt="" /></a>
-                            <div class="description">
-                                <div class="date">apr 07 / 15</div>
-                                <a class="title">Fusce tincidunt accumsan pretium sit amet</a>
-                            </div>
-                        </div>
-                        <div class="footer-post-preview clearfix">
-                            <a class="image" href="#"><img src="<?php echo e(asset('frontend/img/thumbnail-3.jpg')); ?>" alt="" /></a>
-                            <div class="description">
-                                <div class="date">apr 07 / 15</div>
-                                <a class="title">Fusce tincidunt accumsan pretium sit amet</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-3">
-                        <h6 class="h6 light">popular tags</h6>
-                        <div class="empty-space col-xs-b20"></div>
-                        <div class="tags clearfix">
-                            <a class="tag">headphoness</a>
-                            <a class="tag">accessories</a>
-                            <a class="tag">new</a>
-                            <a class="tag">wireless</a>
-                            <a class="tag">cables</a>
-                            <a class="tag">devices</a>
-                            <a class="tag">gadgets</a>
-                            <a class="tag">brands</a>
-                            <a class="tag">replacements</a>
-                            <a class="tag">cases</a>
-                            <a class="tag">cables</a>
-                            <a class="tag">professional</a>
-                        </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="contactinfo">
+                        <ul class="nav nav-pills">
+                            <li><a href="#"><i class="fa fa-phone"></i> +2 95 01 88 821</a></li>
+                            <li><a href="#"><i class="fa fa-envelope"></i> info@domain.com</a></li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-            <div class="footer-bottom">
-                <div class="row">
-                    <div class="col-lg-8 col-xs-text-center col-lg-text-left col-xs-b20 col-lg-b0">
-                        <div class="copyright">&copy; 2015 All rights reserved. Development by <a href="http://themeforest.net/user/unionagency" target="_blank">UnionAgency</a></div>
-                        <div class="follow">
-                            <a class="entry" href="#"><i class="fa fa-facebook"></i></a>
-                            <a class="entry" href="#"><i class="fa fa-twitter"></i></a>
-                            <a class="entry" href="#"><i class="fa fa-linkedin"></i></a>
-                            <a class="entry" href="#"><i class="fa fa-google-plus"></i></a>
-                            <a class="entry" href="#"><i class="fa fa-pinterest-p"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-xs-text-center col-lg-text-right">
-                        <div class="footer-payment-icons">
-                            <a class="entry"><img src="<?php echo e(asset('frontend/img/thumbnail-4.jpg')); ?>" alt="" /></a>
-                            <a class="entry"><img src="<?php echo e(asset('frontend/img/thumbnail-5.jpg')); ?>" alt="" /></a>
-                            <a class="entry"><img src="<?php echo e(asset('frontend/img/thumbnail-6.jpg')); ?>" alt="" /></a>
-                            <a class="entry"><img src="<?php echo e(asset('frontend/img/thumbnail-7.jpg')); ?>" alt="" /></a>
-                            <a class="entry"><img src="<?php echo e(asset('frontend/img/thumbnail-8.jpg')); ?>" alt="" /></a>
-                            <a class="entry"><img src="<?php echo e(asset('frontend/img/thumbnail-9.jpg')); ?>" alt="" /></a>
-                        </div>
+                <div class="col-sm-6">
+                    <div class="social-icons pull-right">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-    </footer>
-</div>
+    </div><!--/header_top-->
 
-<div class="popup-wrapper">
-    <div class="bg-layer"></div>
-
-    <div class="popup-content" data-rel="1">
-        <div class="layer-close"></div>
-        <div class="popup-container size-1">
-            <div class="popup-align">
-                <h3 class="h3 text-center">Log in</h3>
-                <div class="empty-space col-xs-b30"></div>
-                <input class="simple-input" type="text" value="" placeholder="Your email" />
-                <div class="empty-space col-xs-b10 col-sm-b20"></div>
-                <input class="simple-input" type="password" value="" placeholder="Enter password" />
-                <div class="empty-space col-xs-b10 col-sm-b20"></div>
-                <div class="row">
-                    <div class="col-sm-6 col-xs-b10 col-sm-b0">
-                        <div class="empty-space col-sm-b5"></div>
-                        <a class="simple-link">Forgot password?</a>
-                        <div class="empty-space col-xs-b5"></div>
-                        <a class="simple-link">register now</a>
+    <div class="header-middle"><!--header-middle-->
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="logo pull-left">
+                        <a href="index.html"><img src="images/home/logo.png" alt="" /></a>
                     </div>
-                    <div class="col-sm-6 text-right">
-                        <a class="button size-2 style-3" href="#">
-                                <span class="button-wrapper">
-                                    <span class="icon"><img src="<?php echo e(asset('frontend/img/icon-4.png')); ?>" alt="" /></span>
-                                    <span class="text">submit</span>
-                                </span>
-                        </a>
+                    <div class="btn-group pull-right">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-default dropdown-toggle usa" data-toggle="dropdown">
+                                USA
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Canada</a></li>
+                                <li><a href="#">UK</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-default dropdown-toggle usa" data-toggle="dropdown">
+                                DOLLAR
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Canadian Dollar</a></li>
+                                <li><a href="#">Pound</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <div class="popup-or">
-                    <span>or</span>
-                </div>
-                <div class="row m5">
-                    <div class="col-sm-4 col-xs-b10 col-sm-b0">
-                        <a class="button facebook-button size-2 style-4 block" href="#">
-                                <span class="button-wrapper">
-                                    <span class="icon"><img src="<?php echo e(asset('frontend/img/icon-4.png')); ?>" alt="" /></span>
-                                    <span class="text">facebook</span>
-                                </span>
-                        </a>
-                    </div>
-                    <div class="col-sm-4 col-xs-b10 col-sm-b0">
-                        <a class="button twitter-button size-2 style-4 block" href="#">
-                                <span class="button-wrapper">
-                                    <span class="icon"><img src="<?php echo e(asset('frontend/img/icon-4.png')); ?>" alt="" /></span>
-                                    <span class="text">twitter</span>
-                                </span>
-                        </a>
-                    </div>
-                    <div class="col-sm-4">
-                        <a class="button google-button size-2 style-4 block" href="#">
-                                <span class="button-wrapper">
-                                    <span class="icon"><img src="<?php echo e(asset('frontend/img/icon-4.png')); ?>" alt="" /></span>
-                                    <span class="text">google+</span>
-                                </span>
-                        </a>
+                <div class="col-sm-8">
+                    <div class="shop-menu pull-right">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#"><i class="fa fa-user"></i> Account</a></li>
+                            <li><a href="#"><i class="fa fa-star"></i> Wishlist</a></li>
+                            <li><a href="checkout.html"><i class="fa fa-crosshairs"></i> Checkout</a></li>
+                            <li><a href="cart.html"><i class="fa fa-shopping-cart"></i> Cart</a></li>
+                            <li><a href="login.html"><i class="fa fa-lock"></i> Login</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <div class="button-close"></div>
+        </div>
+    </div><!--/header-middle-->
+
+    <div class="header-bottom"><!--header-bottom-->
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-9">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="mainmenu pull-left">
+                        <ul class="nav navbar-nav collapse navbar-collapse">
+                            <li><a href="index.html" class="active">Trang chủ</a></li>
+                            <li class="dropdown"><a href="#">Sản phẩm<i class="fa fa-angle-down"></i></a>
+                                <ul role="menu" class="sub-menu">
+                                    <li><a href="shop.html">Sản phẩm mới</a></li>
+                                    <li><a href="product-details.html">Product Details</a></li>
+                                    <li><a href="checkout.html">Checkout</a></li>
+                                    <li><a href="cart.html">Cart</a></li>
+                                    <li><a href="login.html">Login</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a href="#">Tin tức<i class="fa fa-angle-down"></i></a>
+                                <ul role="menu" class="sub-menu">
+                                    <li><a href="blog.html">Blog List</a></li>
+                                    <li><a href="blog-single.html">Blog Single</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="404.html">Giỏ hàng</a></li>
+                            <li><a href="contact-us.html">Liên hệ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="search_box pull-right">
+                        <input type="text" placeholder="Search"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!--/header-bottom-->
+</header><!--/header-->
+
+<section id="slider"><!--slider-->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div id="slider-carousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#slider-carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#slider-carousel" data-slide-to="1"></li>
+                        <li data-target="#slider-carousel" data-slide-to="2"></li>
+                    </ol>
+
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <div class="col-sm-6">
+                                <h1><span>E</span>-SHOPPER</h1>
+                                <h2>Free E-Commerce Template</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                                <button type="button" class="btn btn-default get">Get it now</button>
+                            </div>
+                            <div class="col-sm-6">
+                                <img src="images/home/girl1.jpg" class="girl img-responsive" alt="" />
+                                <img src="images/home/pricing.png"  class="pricing" alt="" />
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="col-sm-6">
+                                <h1><span>E</span>-SHOPPER</h1>
+                                <h2>100% Responsive Design</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                                <button type="button" class="btn btn-default get">Get it now</button>
+                            </div>
+                            <div class="col-sm-6">
+                                <img src="images/home/girl2.jpg" class="girl img-responsive" alt="" />
+                                <img src="images/home/pricing.png"  class="pricing" alt="" />
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="col-sm-6">
+                                <h1><span>E</span>-SHOPPER</h1>
+                                <h2>Free Ecommerce Template</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                                <button type="button" class="btn btn-default get">Get it now</button>
+                            </div>
+                            <div class="col-sm-6">
+                                <img src="images/home/girl3.jpg" class="girl img-responsive" alt="" />
+                                <img src="images/home/pricing.png" class="pricing" alt="" />
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <a href="#slider-carousel" class="left control-carousel hidden-xs" data-slide="prev">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a href="#slider-carousel" class="right control-carousel hidden-xs" data-slide="next">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section><!--/slider-->
+
+<section>
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-sm-3">
+                <div class="left-sidebar">
+                    <h2>Category</h2>
+                    <div class="panel-group category-products" id="accordian"><!--category-productsr-->
+                        <div class="panel panel-default">
+                            <?php $__currentLoopData = $category; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $key => $categoryItem): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"><a href="#"><?php echo e($categoryItem->category_name); ?></a></h4>
+                                </div>
+                            <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                        </div>
+                    </div><!--/category-products-->
+
+                    <div class="brands_products"><!--brands_products-->
+                        <h2>Brands</h2>
+                        <div class="brands-name">
+                            <ul class="nav nav-pills nav-stacked">
+                                <?php $__currentLoopData = $brand; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $key=>$brandItem): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                                    <li><a href="<?php echo e($brandItem->brand_id); ?>"> <?php echo e($brandItem->brand_name); ?></a></li>
+                                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                            </ul>
+                        </div>
+                    </div><!--/brands_products-->
+
+
+                    <div class="price-range"><!--price-range-->
+                        <h2>Price Range</h2>
+                        <div class="well text-center">
+                            <input type="text" class="span2" value="" data-slider-min="0" data-slider-max="600" data-slider-step="5" data-slider-value="[250,450]" id="sl2" ><br />
+                            <b class="pull-left">$ 0</b> <b class="pull-right">$ 600</b>
+                        </div>
+                    </div><!--/price-range-->
+
+                    <div class="shipping text-center"><!--shipping-->
+                        <img src="images/home/shipping.jpg" alt="" />
+                    </div><!--/shipping-->
+
+                </div>
+            </div>
+            <?php echo $__env->yieldContent('contents'); ?>
         </div>
     </div>
 
-    <div class="popup-content" data-rel="2">
-        <div class="layer-close"></div>
-        <div class="popup-container size-1">
-            <div class="popup-align">
-                <h3 class="h3 text-center">register</h3>
-                <div class="empty-space col-xs-b30"></div>
-                <input class="simple-input" type="text" value="" placeholder="Your name" />
-                <div class="empty-space col-xs-b10 col-sm-b20"></div>
-                <input class="simple-input" type="text" value="" placeholder="Your email" />
-                <div class="empty-space col-xs-b10 col-sm-b20"></div>
-                <input class="simple-input" type="password" value="" placeholder="Enter password" />
-                <div class="empty-space col-xs-b10 col-sm-b20"></div>
-                <input class="simple-input" type="password" value="" placeholder="Repeat password" />
-                <div class="empty-space col-xs-b10 col-sm-b20"></div>
-                <div class="row">
-                    <div class="col-sm-7 col-xs-b10 col-sm-b0">
-                        <div class="empty-space col-sm-b15"></div>
-                        <label class="checkbox-entry">
-                            <input type="checkbox" /><span><a href="#">Privacy policy agreement</a></span>
-                        </label>
-                    </div>
-                    <div class="col-sm-5 text-right">
-                        <a class="button size-2 style-3" href="#">
-                                <span class="button-wrapper">
-                                    <span class="icon"><img src="<?php echo e(asset('frontend/img/icon-4.png')); ?>" alt="" /></span>
-                                    <span class="text">submit</span>
-                                </span>
-                        </a>
+</section>
+
+<footer id="footer"><!--Footer-->
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-2">
+                    <div class="companyinfo">
+                        <h2><span>e</span>-shopper</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,sed do eiusmod tempor</p>
                     </div>
                 </div>
-                <div class="popup-or">
-                    <span>or</span>
+                <div class="col-sm-7">
+                    <div class="col-sm-3">
+                        <div class="video-gallery text-center">
+                            <a href="#">
+                                <div class="iframe-img">
+                                    <img src="images/home/iframe1.png" alt="" />
+                                </div>
+                                <div class="overlay-icon">
+                                    <i class="fa fa-play-circle-o"></i>
+                                </div>
+                            </a>
+                            <p>Circle of Hands</p>
+                            <h2>24 DEC 2014</h2>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="video-gallery text-center">
+                            <a href="#">
+                                <div class="iframe-img">
+                                    <img src="images/home/iframe2.png" alt="" />
+                                </div>
+                                <div class="overlay-icon">
+                                    <i class="fa fa-play-circle-o"></i>
+                                </div>
+                            </a>
+                            <p>Circle of Hands</p>
+                            <h2>24 DEC 2014</h2>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="video-gallery text-center">
+                            <a href="#">
+                                <div class="iframe-img">
+                                    <img src="images/home/iframe3.png" alt="" />
+                                </div>
+                                <div class="overlay-icon">
+                                    <i class="fa fa-play-circle-o"></i>
+                                </div>
+                            </a>
+                            <p>Circle of Hands</p>
+                            <h2>24 DEC 2014</h2>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="video-gallery text-center">
+                            <a href="#">
+                                <div class="iframe-img">
+                                    <img src="images/home/iframe4.png" alt="" />
+                                </div>
+                                <div class="overlay-icon">
+                                    <i class="fa fa-play-circle-o"></i>
+                                </div>
+                            </a>
+                            <p>Circle of Hands</p>
+                            <h2>24 DEC 2014</h2>
+                        </div>
+                    </div>
                 </div>
-                <div class="row m5">
-                    <div class="col-sm-4 col-xs-b10 col-sm-b0">
-                        <a class="button facebook-button size-2 style-4 block" href="#">
-                                <span class="button-wrapper">
-                                    <span class="icon"><img src="<?php echo e(asset('frontend/img/icon-4.png')); ?>" alt="" /></span>
-                                    <span class="text">facebook</span>
-                                </span>
-                        </a>
-                    </div>
-                    <div class="col-sm-4 col-xs-b10 col-sm-b0">
-                        <a class="button twitter-button size-2 style-4 block" href="#">
-                                <span class="button-wrapper">
-                                    <span class="icon"><img src="<?php echo e(asset('frontend/img/icon-4.png')); ?>" alt="" /></span>
-                                    <span class="text">twitter</span>
-                                </span>
-                        </a>
-                    </div>
-                    <div class="col-sm-4">
-                        <a class="button google-button size-2 style-4 block" href="#">
-                                <span class="button-wrapper">
-                                    <span class="icon"><img src="<?php echo e(asset('frontend/img/icon-4.png')); ?>" alt="" /></span>
-                                    <span class="text">google+</span>
-                                </span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="button-close"></div>
-        </div>
-    </div>
-
-    <div class="popup-content" data-rel="3">
-        <div class="layer-close"></div>
-        <div class="popup-container size-2">
-            <div class="popup-align">
-                <div class="row">
-                    <div class="col-sm-6 col-xs-b30 col-sm-b0">
-
-                        <div class="main-product-slider-wrapper swipers-couple-wrapper">
-                            <div class="swiper-container swiper-control-top">
-                                <div class="swiper-button-prev hidden"></div>
-                                <div class="swiper-button-next hidden"></div>
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="swiper-lazy-preloader"></div>
-                                        <div class="product-big-preview-entry swiper-lazy" data-background="<?php echo e(asset('frontend/img/product-preview-4.jpg')); ?>"></div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="swiper-lazy-preloader"></div>
-                                        <div class="product-big-preview-entry swiper-lazy" data-background="<?php echo e(asset('frontend/img/product-preview-5.jpg')); ?>"></div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="swiper-lazy-preloader"></div>
-                                        <div class="product-big-preview-entry swiper-lazy" data-background="<?php echo e(asset('frontend/img/product-preview-6.jpg')); ?>"></div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="swiper-lazy-preloader"></div>
-                                        <div class="product-big-preview-entry swiper-lazy" data-background="<?php echo e(asset('frontend/img/product-preview-7.jpg')); ?>"></div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="swiper-lazy-preloader"></div>
-                                        <div class="product-big-preview-entry swiper-lazy" data-background="<?php echo e(asset('frontend/img/product-preview-8.jpg')); ?>"></div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="swiper-lazy-preloader"></div>
-                                        <div class="product-big-preview-entry swiper-lazy" data-background="<?php echo e(asset('frontend/img/product-preview-9.jpg')); ?>"></div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="swiper-lazy-preloader"></div>
-                                        <div class="product-big-preview-entry swiper-lazy" data-background="<?php echo e(asset('frontend/img/product-preview-10.jpg')); ?>"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="empty-space col-xs-b30 col-sm-b60"></div>
-
-                            <div class="swiper-container swiper-control-bottom" data-breakpoints="1" data-xs-slides="3" data-sm-slides="3" data-md-slides="4" data-lt-slides="5" data-slides-per-view="5" data-center="1" data-click="1">
-                                <div class="swiper-button-prev hidden"></div>
-                                <div class="swiper-button-next hidden"></div>
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="product-small-preview-entry">
-                                            <img src="<?php echo e(asset('frontend/img/product-preview-4_.jpg')); ?>" alt="" />
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="product-small-preview-entry">
-                                            <img src="<?php echo e(asset('frontend/img/product-preview-5_.jpg')); ?>" alt="" />
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="product-small-preview-entry">
-                                            <img src="<?php echo e(asset('frontend/img/product-preview-6_.jpg')); ?>" alt="" />
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="product-small-preview-entry">
-                                            <img src="<?php echo e(asset('frontend/img/product-preview-7_.jpg')); ?>" alt="" />
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="product-small-preview-entry">
-                                            <img src="<?php echo e(asset('frontend/img/product-preview-8_.jpg')); ?>" alt="" />
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="product-small-preview-entry">
-                                            <img src="<?php echo e(asset('frontend/img/product-preview-9_.jpg')); ?>" alt="" />
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="product-small-preview-entry">
-                                            <img src="<?php echo e(asset('frontend/img/product-preview-10_.jpg')); ?>" alt="" />
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="simple-article size-3 grey col-xs-b5">SMART WATCHES</div>
-                        <div class="h3 col-xs-b25">watch 42mm smartwatch</div>
-                        <div class="row col-xs-b25">
-                            <div class="col-sm-6">
-                                <div class="simple-article size-5 grey">PRICE: <span class="color">$225.00</span></div>
-                            </div>
-                            <div class="col-sm-6 col-sm-text-right">
-                                <div class="rate-wrapper align-inline">
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                    <i class="fa fa-star-o" aria-hidden="true"></i>
-                                </div>
-                                <div class="simple-article size-2 align-inline">128 Reviews</div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <div class="simple-article size-3 col-xs-b5">ITEM NO.: <span class="grey">127-#5238</span></div>
-                            </div>
-                            <div class="col-sm-6 col-sm-text-right">
-                                <div class="simple-article size-3 col-xs-b20">AVAILABLE.: <span class="grey">YES</span></div>
-                            </div>
-                        </div>
-                        <div class="simple-article size-3 col-xs-b30">Vivamus in tempor eros. Phasellus rhoncus in nunc sit amet mattis. Integer in ipsum vestibulum, molestie arcu ac, efficitur tellus. Phasellus id vulputate erat.</div>
-                        <div class="row col-xs-b40">
-                            <div class="col-sm-3">
-                                <div class="h6 detail-data-title size-1">size:</div>
-                            </div>
-                            <div class="col-sm-9">
-                                <select class="SlectBox">
-                                    <option disabled="disabled" selected="selected">Choose size</option>
-                                    <option value="volvo">Volvo</option>
-                                    <option value="saab">Saab</option>
-                                    <option value="mercedes">Mercedes</option>
-                                    <option value="audi">Audi</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="row col-xs-b40">
-                            <div class="col-sm-3">
-                                <div class="h6 detail-data-title">color:</div>
-                            </div>
-                            <div class="col-sm-9">
-                                <div class="color-selection size-1">
-                                    <div class="entry active" style="color: #a7f050;"></div>
-                                    <div class="entry" style="color: #50e3f0;"></div>
-                                    <div class="entry" style="color: #eee;"></div>
-                                    <div class="entry" style="color: #4d900c;"></div>
-                                    <div class="entry" style="color: #edb82c;"></div>
-                                    <div class="entry" style="color: #7d3f99;"></div>
-                                    <div class="entry" style="color: #3481c7;"></div>
-                                    <div class="entry" style="color: #bf584b;"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row col-xs-b40">
-                            <div class="col-sm-3">
-                                <div class="h6 detail-data-title size-1">quantity:</div>
-                            </div>
-                            <div class="col-sm-9">
-                                <div class="quantity-select">
-                                    <span class="minus"></span>
-                                    <span class="number">1</span>
-                                    <span class="plus"></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row m5 col-xs-b40">
-                            <div class="col-sm-6 col-xs-b10 col-sm-b0">
-                                <a class="button size-2 style-2 block" href="#">
-                                        <span class="button-wrapper">
-                                            <span class="icon"><img src="<?php echo e(asset('frontend/img/icon-2.png')); ?>" alt=""></span>
-                                            <span class="text">add to cart</span>
-                                        </span>
-                                </a>
-                            </div>
-                            <div class="col-sm-6">
-                                <a class="button size-2 style-1 block noshadow" href="#">
-                                    <span class="button-wrapper">
-                                        <span class="icon"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
-                                        <span class="text">add to favourites</span>
-                                    </span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-3">
-                                <div class="h6 detail-data-title size-2">share:</div>
-                            </div>
-                            <div class="col-sm-9">
-                                <div class="follow light">
-                                    <a class="entry" href="#"><i class="fa fa-facebook"></i></a>
-                                    <a class="entry" href="#"><i class="fa fa-twitter"></i></a>
-                                    <a class="entry" href="#"><i class="fa fa-linkedin"></i></a>
-                                    <a class="entry" href="#"><i class="fa fa-google-plus"></i></a>
-                                    <a class="entry" href="#"><i class="fa fa-pinterest-p"></i></a>
-                                </div>
-                            </div>
-                        </div>
+                <div class="col-sm-3">
+                    <div class="address">
+                        <img src="images/home/map.png" alt="" />
+                        <p>505 S Atlantic Ave Virginia Beach, VA(Virginia)</p>
                     </div>
                 </div>
             </div>
-            <div class="button-close"></div>
         </div>
     </div>
 
-</div>
+    <div class="footer-widget">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-2">
+                    <div class="single-widget">
+                        <h2>Service</h2>
+                        <ul class="nav nav-pills nav-stacked">
+                            <li><a href="#">Online Help</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Order Status</a></li>
+                            <li><a href="#">Change Location</a></li>
+                            <li><a href="#">FAQ’s</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="single-widget">
+                        <h2>Quock Shop</h2>
+                        <ul class="nav nav-pills nav-stacked">
+                            <li><a href="#">T-Shirt</a></li>
+                            <li><a href="#">Mens</a></li>
+                            <li><a href="#">Womens</a></li>
+                            <li><a href="#">Gift Cards</a></li>
+                            <li><a href="#">Shoes</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="single-widget">
+                        <h2>Policies</h2>
+                        <ul class="nav nav-pills nav-stacked">
+                            <li><a href="#">Terms of Use</a></li>
+                            <li><a href="#">Privecy Policy</a></li>
+                            <li><a href="#">Refund Policy</a></li>
+                            <li><a href="#">Billing System</a></li>
+                            <li><a href="#">Ticket System</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="single-widget">
+                        <h2>About Shopper</h2>
+                        <ul class="nav nav-pills nav-stacked">
+                            <li><a href="#">Company Information</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Store Location</a></li>
+                            <li><a href="#">Affillate Program</a></li>
+                            <li><a href="#">Copyright</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-sm-offset-1">
+                    <div class="single-widget">
+                        <h2>About Shopper</h2>
+                        <form action="#" class="searchform">
+                            <input type="text" placeholder="Your email address" />
+                            <button type="submit" class="btn btn-default"><i class="fa fa-arrow-circle-o-right"></i></button>
+                            <p>Get the most recent updates from <br />our site and be updated your self...</p>
+                        </form>
+                    </div>
+                </div>
 
-<script src="<?php echo e(asset('frontend/js/jquery-2.2.4.min.js')); ?>"></script>
-<script src="<?php echo e(asset('frontend/js/swiper.jquery.min.js')); ?>"></script>
-<script src="<?php echo e(asset('frontend/js/global.js')); ?>"></script>
+            </div>
+        </div>
+    </div>
 
-<!-- styled select -->
-<script src="<?php echo e(asset('frontend/js/jquery.sumoselect.min.js')); ?>"></script>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <p class="pull-left">Copyright © 2013 E-SHOPPER Inc. All rights reserved.</p>
+                <p class="pull-right">Designed by <span><a target="_blank" href="http://www.themeum.com">Themeum</a></span></p>
+            </div>
+        </div>
+    </div>
 
-<!-- counter -->
-<script src="<?php echo e(asset('frontend/js/jquery.classycountdown.js')); ?>"></script>
-<script src="<?php echo e(asset('frontend/js/jquery.knob.js')); ?>"></script>
-<script src="<?php echo e(asset('frontend/js/jquery.throttle.js')); ?>"></script>
+</footer><!--/Footer-->
 
+
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.scrollUp.min.js"></script>
+<script src="js/price-range.js"></script>
+<script src="js/jquery.prettyPhoto.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
 <?php /**PATH /Users/goodboy/Desktop/NAM/Learning/Laravel/project_store/resources/views/main.blade.php ENDPATH**/ ?>

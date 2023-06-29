@@ -17,7 +17,9 @@
                         @csrf
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Tên sản phẩm</label>
-                            <input name="product_name" class="form-control"  value="{{old('product_name') ?? $productDetail->product_name}}">
+                            <label>
+                                <input name="product_name" class="form-control"  value="{{old('product_name') ?? $productDetail->product_name}}">
+                            </label>
                             @error('product_name')
                             <span style="color: red">{{$message}}</span>
                             @enderror
@@ -25,7 +27,9 @@
                         </div>
                         <div class="mb-3">
                             <label for="exampleInputPassword1" class="form-label">Mô tả</label>
-                            <input name="product_desc" class="form-control"  value="{{old('product_desc') ?? $productDetail->product_desc}}">
+                            <label>
+                                <input name="product_desc" class="form-control"  value="{{old('product_desc') ?? $productDetail->product_desc}}">
+                            </label>
                             @error('product_desc')
                             <span style="color: red">{{$message}}</span>
                             @enderror
