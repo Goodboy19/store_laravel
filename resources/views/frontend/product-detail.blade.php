@@ -1,4 +1,7 @@
 @extends('main')
+@section('title')
+    {{$title}}
+@endsection
 @section('contents')
     <div class="col-sm-9 padding-right">
 
@@ -46,15 +49,19 @@
                     <div class="product-information"><!--/product-information-->
                         <h2>{{$productItem->product_name}}</h2>
                         <p>Mã ID sản phẩm: {{$productItem->product_id}}</p>
-                        <span>
-									<span>{{number_format($productItem->product_price)}} đ</span>
-									<label>Quantity:</label>
-									<input type="text" value="1"/>
-									<button type="button" class="btn btn-fefault cart">
-										<i class="fa fa-shopping-cart"></i>
-										Add to cart
-									</button>
-								</span>
+                        <form action="{{route('saveCart')}}" method="post">
+                            @csrf
+                            <span>
+                                <span>{{number_format($productItem->product_price)}} đ</span>
+                                <label>Quantity:</label>
+                                <input name="quantity" type="number" value="1"/>
+                                <input name="product_id_hidden" type="hidden" value="{{$productItem->product_id}}">
+                                <button type="submit" class="btn btn-fefault cart">
+                                    <i class="fa fa-shopping-cart"></i>
+                                    Add to cart
+                                </button>
+                            </span>
+                        </form>
                         <p><b>Tình trạng:</b></p>
                         <p><b>Loại sản phẩm:</b> {{$productItem->category_name}}</p>
                         <p><b>Thương hiệu: </b>{{$productItem->brand_name}}</p>
@@ -228,8 +235,6 @@
             <div id="recommended-item-carousel" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="item active">
-
-
                         @foreach($productRelation as $key =>$productRelationItem)
                         <div class="col-sm-4">
                             <div class="product-image-wrapper">
@@ -246,7 +251,6 @@
                             </div>
                         </div>
                         @endforeach
-
                     </div>
                 </div>
                 <a class="left recommended-item-control" href="#recommended-item-carousel" data-slide="prev">

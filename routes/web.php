@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\CartController;
+use App\Http\Controllers\CheckoutController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\CategoryProductController;
 use App\Http\Controllers\BrandProductController;
@@ -20,7 +22,17 @@ use Illuminate\Support\Facades\Route;
 */
 //FrontEnd
 Route::get('/', [HomeController::class,'index']);
+//Chi tiết sản phẩm
 Route::get('/detail-product/{id}', [HomeController::class,'detailProduct'])->name('detailProduct');
+//  GIỎ HÀNG
+Route::post('/save-cart', [CartController::class,'saveCart'])->name('saveCart');
+Route::get('/show-cart', [CartController::class,'showCart'])->name('showCart');
+Route::get('/show-cart/{rowId}', [CartController::class,'deleteCart'])->name('deleteCart');
+Route::post('/update-cart', [CartController::class,'updateCart'])->name('updateCart');
+//  CHECK OUT
+Route::get('/check-out', [CheckoutController::class,'checkOut'])->name('checkOut');
+Route::post('/add-customer', [CheckoutController::class,'addCustomer'])->name('addCustomer');
+
 
 
 //-------------BACK END - QUẢN TRỊ ADMIN--------------

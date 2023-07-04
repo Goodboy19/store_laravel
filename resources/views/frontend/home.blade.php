@@ -1,4 +1,7 @@
 @extends('main')
+@section('title')
+    {{$title}}
+@endsection
 @section('contents')
     <div class="col-sm-9 padding-right">
         <div class="features_items"><!--features_items-->
