@@ -32,6 +32,7 @@ Route::post('/update-cart', [CartController::class,'updateCart'])->name('updateC
 //  CHECK OUT
 Route::get('/check-out', [CheckoutController::class,'checkOut'])->name('checkOut');
 Route::post('/add-customer', [CheckoutController::class,'addCustomer'])->name('addCustomer');
+Route::get('/check-final', [CheckoutController::class,'checkOutFinal'])->name('sold');
 
 
 

@@ -7,6 +7,8 @@ use App\Models\CategoryProductModel;
 use App\Models\CheckOutModel;
 use App\Models\ProductModel;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Session;
+
 
 class CheckoutController extends Controller
 {
@@ -28,11 +30,19 @@ class CheckoutController extends Controller
         $dataInsert =[
             'customer_name'     => $request->nameCus,
             'customer_email'    => $request->emailCus,
-            'customer_password' => $request->passCus,
+            'customer_password' => md5($request->passCus),
             'customer_phone'    => $request->phoneCus
         ];
         CheckOutModel::create($dataInsert);
-        return view('frontend.home',compact('title','category','brand','products'));
+        Session::put('customer_name',$request->nameCus);
+        return redirect('check-final');
     }
-    //
+
+    public function checkOutFinal(){
+        $category = CategoryProductModel::where('category_status',1)->get();
+//        Hiển thị Brand - Thương hiệu sản phẩm
+        $brand = BrandProductModel::withTrashed()->orderBy('brand_id','ASC')->orderBy('deleted_at','DESC')->get();
+        return view('frontend.final-check',compact('category','brand'));
+    }
+
 }
